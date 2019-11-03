@@ -1,0 +1,318 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+
+/*========================HOME PAGE========================*/
+
+
+/*=======THE NAVBAR=======*/
+
+#mainNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 4.375em;
+    background-color: rgba(219, 215, 215, 0.7);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+    width: 6.52em;
+}
+
+.navIcon {
+    cursor: pointer;
+}
+
+.navIcon:hover {
+    color: #555;
+}
+
+.navlinks {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: none;
+}
+
+.navlinks li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px 10px;
+}
+
+.navlinks li a {
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navlinks li a :hover {
+    border-bottom: solid 1px red;
+}
+
+
+/*=======THE SIDE NAVBAR========*/
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: #dbd7d7;
+    width: 0;
+    z-index: 1;
+    left: 0;
+    transition: 0.7s;
+    overflow: hidden;
+}
+
+.sidelinks {
+    text-align: center;
+    z-index: 20;
+}
+
+.sidelinks li {
+    margin: 10px 0px;
+}
+
+.sidelinks li a {
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 27px;
+}
+
+.set {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.sider {
+    cursor: pointer;
+    color: #555;
+}
+
+
+/*=========FOR THE HOME PAGE============*/
+
+
+/*=====WELCOME LANDING PAGE=========*/
+
+.welcome {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("pictures/coffeb.jpg");
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    margin-top: 4px;
+}
+
+.splashLogo {
+    padding: 20px;
+    padding-top: 30px;
+}
+
+.splashLogo img {
+    width: 160px;
+    display: block;
+}
+
+.splash {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 25px;
+}
+
+.splash h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: steelblue;
+}
+
+.splash h3 {
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(110, 110, 110);
+}
+
+.separator {
+    color: rgb(240, 45, 45);
+}
+
+
+/*==========MAIN SECTION===========*/
+
+.shortcut {
+    background-color: red;
+    display: inline-block;
+    color: #dbd7d7;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.explore {
+    background-color: steelblue;
+    position: fixed;
+    bottom: 11%;
+    right: 5px;
+}
+
+.contact {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+.Over {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 10px;
+}
+
+.Add {
+    color: steelblue;
+    font-weight: bold;
+}
+
+.cover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("pictures/close.jpg");
+    color: #dbd7d7;
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.cover2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("pictures/art.jpg");
+    color: #dbd7d7;
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.cover3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("pictures/background-black-and-white-black-and-white-963278.jpg");
+    color: #dbd7d7;
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+/*=========THE SERVICE PAGE SECTION==========*/
+
+.servSplash {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("pictures/clockwise.jpg");
+    padding: 30px;
+    color: #dbd7d7;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.aside {
+    font-family: 'Titillium Web', sans-serif;
+    padding: 10px;
+}
+
+
+/*=========THE PORTIFOLIO PAGE============*/
+
+.portSplash {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("pictures/accounting-banking-calculator-938965.jpg");
+    background-position: center;
+    padding: 30px;
+    color: #dbd7d7;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.portBase {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+/*=========THE CONTACT PAGE===========*/
+
+.contSplash {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("pictures/contactPic.jpg");
+    padding: 30px;
+    background-position: center;
+    color: #dbd7d7;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.contactSpot {
+    display: inline-block!important;
+    background-color: rgba(219, 215, 215, 0.7);
+    font-family: 'Titillium Web', sans-serif;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.coicon {
+    color: steelblue;
+}
+
+.topInfo {
+    text-align: right;
+    display: none;
+}
+
+
+/*=====FOOTER======*/
+
+footer {
+    background-color: #dbd7d7;
+}
+
+
+/*========MEDIA QUERIES==========*/
+
+
+/*tablets view screens*/
+
+@media(min-width:720px) {
+    .topInfo {
+        display: block;
+    }
+    .sidebar {
+        width: 50%;
+    }
+}
+
+
+/*larger screens*/
+
+@media(min-width:920px) {
+    .aibo {
+        display: none;
+    }
+    .navlinks {
+        display: block;
+    }
+    .Over {
+        letter-spacing: ;
+        columns: #555555;
+    }
+    .sidebar {
+        display: none;
+    }
+}
